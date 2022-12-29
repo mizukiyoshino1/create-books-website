@@ -28,6 +28,12 @@ class LoginController extends Controller
      */
     protected $redirectTo = RouteServiceProvider::HOME;
 
+    //ログイン後、/mainpage(url)にリダイレクト
+    public function redirectPath()
+    {
+        return 'mainpage';
+    }
+
     /**
      * Create a new controller instance.
      *

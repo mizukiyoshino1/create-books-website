@@ -31,6 +31,12 @@ class RegisterController extends Controller
      */
     protected $redirectTo = RouteServiceProvider::HOME;
 
+    //新規登録完了後、/mainpage(url)にリダイレクト先
+    public function redirectPath()
+    {
+        return 'mainpage';
+    }
+
     /**
      * Create a new controller instance.
      *

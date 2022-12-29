@@ -17,9 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// index画面を表示
-Route::get('/home', 'HomeController@home')->name('home.books');
-Auth::routes();
-
 // Authホーム画面
+Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
+
+// mainpage画面を表示
+Route::get('/mainpage', 'HomeController@webpage')->name('mainpage.books');
