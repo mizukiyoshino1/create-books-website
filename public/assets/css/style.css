@@ -1,0 +1,554 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~header~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.top-page {
+  /* background-image: url(./img/pexels-toa-heftiba-şinca-1194408.jpg); */
+  background-image: url("../../img/main-image.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.list {
+  list-style: none;
+  margin: 50px 40px 30px 30px;
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#title {
+  font-size: 85px;
+  margin-bottom: 100px;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ~~~~~~ header-ipad-mini ~~~~~~ */
+
+@media screen and (max-width:780px){
+  .top-page{
+    background-image: url(../../img/phone3.img.jpg);
+    background-position-x: 80%;
+  } 
+
+  .nav{
+    justify-content: center;
+    margin: 0px;
+  }
+
+  .list{
+    margin: 50px 20px 30px 20px;
+  }
+
+  #title {
+    font-size: 70px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~ header-iphone ~~~~~~~~ */
+@media screen and (max-width:390px){
+  .top-page{
+    background-image: url(../../img/phone3.img.jpg);
+    background-position-x: 90%;
+    background-size: 700px;
+    background-repeat: no-repeat;
+  } 
+
+  .nav{
+    justify-content: center;
+    margin: 0px;
+  }
+
+  .list{
+    margin: 50px 20px 30px 20px;
+    font-size: 10px;
+  }
+
+  #title {
+    font-size: 30px;
+    position: relative;
+    bottom: 55px;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .main {
+    height: 50vh;
+  }
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~PURPOSE~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#PURPOSE{
+  text-align: center;
+  margin: 150px 20px 100px 20px;
+  font-size: 40px;
+}
+
+.img{
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.sign{
+  height: 400px;
+  width: 600px;
+  justify-content: center;
+}
+
+.content {
+  text-align: center;
+  margin: 50px 150px 50px 150px;
+  font-size: 20px;
+}
+
+.copy{
+  text-align: center;
+  font-size: 15px;
+  margin: 100px auto;
+}
+
+/* ~~~~~~ PURPOSE-ipad-mini ~~~~~~~~~ */
+
+@media screen and (max-width:780px){
+  .sign{
+    height: 300px;
+    width: 500px;
+    justify-content: center;
+  }  
+
+  .content{
+    font-size: 15px;
+    margin: 50px;
+  }
+
+  #top-content{
+    margin: 50px 75px;
+  }
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~ PURPOSE-iphone ~~~~~~~~~~~ */
+
+@media screen and (max-width:390px) {
+  #PURPOSE{
+    margin-top: 15px;
+    margin-bottom: 40px;
+    font-size: 20px;
+  }  
+
+  .img{
+    margin-bottom: 70px;
+  }
+  
+  .sign{
+    height: 200px;
+    width: 300px;
+  }
+
+  .content{
+    margin: 30px 40px;
+    font-size: 13px;
+  }
+
+  #top-content{
+    margin: 30px 57px;
+  }
+
+  .copy{
+    font-size: 3px;
+    margin: 50px 20px;
+  }
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~ contents BUSINESS ~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.book1 {
+  padding: 0 70px;
+  padding-top: 100px;
+}
+
+#BUSINESS,#DESIGN,#MOVIE {
+  margin-bottom: 130px;
+  font-size: 20px;
+}
+
+.contents {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 260px;
+}
+
+.content-A {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+img {
+  height: 400px;
+  width: 600px;
+}
+
+/* まうすおーばーで要素を浮かせる */
+.img_wrap{
+  border: 1px solid #ddd;
+  width: 600px;
+  height: 400px;
+  margin: 20px auto 0;
+  transition-duration: 0.5s;
+}
+.img_wrap img{
+  width: 100%;
+  cursor: pointer;
+}
+.img_wrap:hover{
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+  transform: translateY(-10px);
+  transition-duration: 0.5s;
+}
+
+.like1 {
+  color: black;
+  padding-left: 15px;
+  position: relative;
+  top: 360px;
+}
+
+.like1.change {
+  color: red;
+}
+
+#bookname1 {
+  margin-top: 60px;
+}
+
+#abstract1 {
+  text-align: center;
+  margin: 50px;
+}
+
+.book2 {
+  padding: 0 70px;
+}
+
+/* ~~~~~~ contents-ipad-mini ~~~~~~ */
+
+@media  screen and (max-width:780px) {
+  #BUSINESS,#DESIGN,#MOVIE {
+    margin-bottom: 80px;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .contents {
+    flex-direction: column;
+    margin-bottom: 80px;
+    flex-wrap: wrap; /*--折り返しの指定--*/
+  }
+
+  .content-A{
+    margin-left: 5%;
+  }
+
+  .img_wrap{
+    height: 340px;
+    width: 540px;
+  }
+
+  .like1 {
+    color: black;
+    padding-left: 5px;
+    position: relative;
+    top: 330px;
+  }  
+  
+  #bookname1 {
+    margin-top: 80px;
+  }
+
+  #change-contents2,#change-contents4{
+    order: 1;
+  }
+
+  #change-contents1,#change-contents3{
+    order: 0;
+  }
+
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~ contents-iphone ~~~~~~~ */
+
+@media screen and (max-width:390px) {
+  #BUSINESS,#DESIGN,#MOVIE {
+    margin-bottom: 10px;
+    font-size: 20px;
+    position: relative;
+    bottom: 40px;
+  }
+
+  .img_wrap{
+    height: 200px;
+    width: 300px;
+  }
+
+  .content-A{
+    margin-left: -10%;
+  }
+
+  .content-B{
+    margin-left: -23%;
+  }
+
+  .like1 {
+    padding-left: 5px;
+    position: relative;
+    top: 230px;
+    right: 50px;
+  }
+
+  #abstract1{
+    margin-bottom: 0px;
+  }
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~youtube~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.youtube {
+  padding: 0 70px;
+}
+
+.movie1{
+  width: 560px; 
+  height: 315px;
+}
+
+iframe {
+  margin: 0px 30px 150px 30px;
+}
+
+.like2 {
+  color: black;
+  padding-right: 10px;
+  padding-left: 10px;
+  position: relative;
+  top: 280px;
+}
+
+.like2.change2{
+  color: red;
+}
+
+/* ~~~~~ youtube-ipad-mini ~~~~~ */
+
+@media screen and (max-width:780px){
+  .movie1{
+    margin-bottom: 80px;
+  }
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~ youtube-iphone ~~~~~~~ */
+
+@media screen and (max-width:390px){
+  .movie1{
+    height: 200px;
+    width: 300px;
+  }
+
+  .like2{
+    padding-right: 5px;
+    padding-left: 5px;
+    top: 210px;
+    right: 50px;
+  }
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~footer~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+footer {
+  text-align: center;
+  background-color: #66CCCC;
+  color: black;
+  padding: 10px;
+  margin-top: 80px;
+  font-size: 20px;
+}
+
+.bottom{
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+small{
+  position: relative;
+  left: 2%;
+}
+
+.instagram{
+  position: relative;
+  left: 450px;
+  color: #000055;
+}
+
+.twitter{
+  position: relative;
+  left: 500px;
+  color: #000055;
+}
+
+.facebook{
+  position: relative;
+  left: 550px;
+  color: #000055;
+}
+
+/* ~~~~~~~~footer-ipad-mini~~~~~~~~ */
+
+@media  screen and (max-width:780px) {
+  .instagram{
+    left: 180px;
+  }
+  .twitter{
+    left: 190px;
+  }
+  .facebook{
+    left: 200px;
+  }
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~footer-iphone~~~~~~~~~~~ */
+
+@media  screen and (max-width:390px) {
+  .instagram{
+    left: 40px;
+  }
+  .twitter{
+    left: 50px;
+  }
+  .facebook{
+    left: 60px;
+  }
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~HOMEボタン~~~~~~~~~~~~ */
+
+.bi {
+  width:40px;
+  height:40px;
+  color: #000055;
+}
+
+.gotop{
+  position: fixed;
+  bottom: 80%;
+  left: 95%;
+  z-index: 10000;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~HOME-ipad-mini~~~~~~~~~~~ */
+
+@media  screen and (max-width:780px) {
+  .bi {
+    width:45px;
+    height:45px;
+  }
+  
+  .gotop{
+    bottom: 40%;
+    left: 94%;
+  }
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~HOME-iphone~~~~~~~~~~~~ */
+
+@media  screen and (max-width:390px) {
+  .bi {
+    width:35px;
+    height:35px;
+  }
+  
+  .gotop{
+    bottom: 40%;
+    left: 1%;
+  }
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
