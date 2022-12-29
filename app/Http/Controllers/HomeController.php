@@ -21,8 +21,16 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+
+    //認証機能(viewを返す)
     public function index()
     {
         return view('home');
+    }
+
+    //mainpageを見せる
+    public function webpage()
+    {
+        return view('mainpage.books');
     }
 }
